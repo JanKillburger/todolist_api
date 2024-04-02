@@ -1,10 +1,10 @@
 
-from rest_framework import permissions, viewsets
+from rest_framework import permissions, viewsets, serializers
+from django.contrib.auth.models import User
 from .models import Todo
 from .serializers import TodoSerializer
 
 # Create your views here.
-
 
 
 class TodoViewSet(viewsets.ModelViewSet):
